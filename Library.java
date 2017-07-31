@@ -24,4 +24,17 @@ class Library{
     return count;
   }
 
+  public void add(Book book){
+    if(libraryIsFull()){
+      return;
+    }
+    int bookCount = bookCount();
+    stock[bookCount] = book;
+  }
+
+  public boolean libraryIsFull(){
+    return bookCount() ==
+    stock.length;
+  }
+
 }
