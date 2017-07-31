@@ -12,5 +12,8 @@ public class ClassroomTest {
   }
 
   @Test
+  public void classStartsEmpty(){
+    assertEquals(0, classroom.personCount());
+  }
 
 }

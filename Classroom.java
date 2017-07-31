@@ -9,4 +9,14 @@ class Classroom{
     this.room = new Person[10];
   }
 
+  public int personCount(){
+    int count = 0;
+    for ( Person person : this.room ){
+      if(person != null) {
+        count++;
+      }
+    }
+    return count;
+  }
+
 }
