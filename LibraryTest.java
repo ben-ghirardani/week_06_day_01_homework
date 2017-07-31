@@ -17,4 +17,9 @@ public class LibraryTest {
     assertEquals("The Library", library.getName());
   }
 
+  @Test
+  public void libraryStartsEmpty(){
+    assertEquals(0, library.bookCount());
+  }
+
 }
