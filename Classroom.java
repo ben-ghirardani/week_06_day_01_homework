@@ -19,4 +19,17 @@ class Classroom{
     return count;
   }
 
+  public void add(Person person){
+    if(classIsFull()){
+      return;
+    }
+    int personCount = personCount();
+    room[personCount] = person;
+  }
+
+  public boolean classIsFull(){
+    return personCount() ==
+    room.length;
+  }
+
 }

@@ -16,4 +16,10 @@ public class ClassroomTest {
     assertEquals(0, classroom.personCount());
   }
 
+  @Test
+  public void studentsArrive(){
+    classroom.add(person);
+    assertEquals(1, classroom.personCount());
+  }
+
 }
